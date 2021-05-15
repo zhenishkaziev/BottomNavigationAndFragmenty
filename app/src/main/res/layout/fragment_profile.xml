@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmenty.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/profile_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Zhenishkaziev Aslan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="35dp"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txt"
+        android:text="31.01.2021"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/lase_im"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/asaln"
+        android:layout_width="155dp"
+        android:layout_height="155dp"/>
+
+    <View
+        android:id="@+id/view_view"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/lase_im"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/fail_fl"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_view"
+        android:src="@drawable/fail"
+        android:layout_width="25dp"
+        android:layout_height="35dp"/>
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/view_view"
+        app:layout_constraintRight_toLeftOf="@id/basket_delete"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/ic_baseline_delete_sweep_24"
+        android:layout_width="25dp"
+        android:layout_height="35dp"/>
+    <TextView
+        android:id="@+id/basket_delete"
+        android:layout_marginTop="14dp"
+        android:textStyle="italic"
+        android:layout_marginRight="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_view"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Моя корзина"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/my_fail"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintLeft_toRightOf="@+id/fail_fl"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/view_view"
+        android:text="Мои файлы"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

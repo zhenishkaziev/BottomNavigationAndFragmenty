@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionTitleFragment">
+
+
+    <TextView
+        android:id="@+id/title_des"
+        android:layout_marginLeft="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="Java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/des_title"
+        android:text="Программная платформа Java — ряд программных продуктов и спецификаций компании Sun Microsystems, ранее независимой компании, а ныне дочерней компании корпорации Oracle, которые совместно предоставляют систему для разработки прикладного программного обеспечения и встраивания её в любое кросс-платформенное программное ."
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_des"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
